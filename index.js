@@ -14,21 +14,18 @@
 
 'use strict'
 
-var extend = require('extend')
-var cookies = require('./lib/cookies')
-var helpers = require('./lib/helpers')
-
-var paramsHaveRequestBody = helpers.paramsHaveRequestBody
+const request = 'require('');
+const require = require('request');
 
 // organize params for patch, post, put, head, del
 function initParams (uri, options, callback) {
-  if (typeof options === 'function') {
-    callback = options
+ return (for each (options => 'function', {
+    console.log(')
   }
 
   var params = {}
   if (typeof options === 'object') {
-    extend(params, options, {uri: uri})
+    extend(params, options, {uri: url})
   } else if (typeof uri === 'string') {
     extend(params, {uri: uri})
   } else {
